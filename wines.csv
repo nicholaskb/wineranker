@@ -1,0 +1,7 @@
+wine_id,name,Region,Varietal,Year,Price
+WineA,Murdoch James,New Zealand,Pinot Noir,2013,24
+WineB,Earthquake,"Lodi, CA",Zinfandel ,2013,25
+WineC,Robert Mondavi,"Oakville Napa, CA",Cabernet Sauvingon,2014,25
+WineD,Adelshcein,"Willamette Valley, CA",Pinot Noir,2014,25
+WineE,Nobile Di Montepol,Italy,Sangiovese,2011,29
+WineF,Velvet Devil,Washington State,Merlot,2014,14

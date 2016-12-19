@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+</head>
+<div class="header">
+  <img src="file:images/DataSciences_logo-for-white-new.png" alt="logo" align="middle" style="width:604px;height:208px;"/>
+<br/>
+</div>
+
+    
+<body>
+    <h1><b>{{ title }}</b></h1>
+    <h3>Flight 1:</h3>
+    <h3> Number of Judges =  {{n_judges}} </h3>
+    <h3> Number of Wines =  {{n_wines}} </h3>
+     {{ winners }}
+    
+    <p style="page-break-before: always" ></p>
+    <h3><b>{{title2}}</b></h3>
+     {{ winners_details }}
+    <p style="page-break-before: always" ></p>
+    <h3><b>{{title_d}}</b></h3>
+     {{ wine_des }}
+    <p style="page-break-before: always" ></p>
+    <h3><b>{{title3}}</b></h3>
+     {{ judges_rankings }}
+ <p style="page-break-before: always" ></p>   
+     <h3><b>{{title4}}</b></h3>
+     {{ votes_against }}
+    <p> ( {{n_judges}}  is the best possible, {{high_n_judges}} is the worst) </p>
+<p style="page-break-before: always" ></p>
+    <h3><b>{{title5}}</b></h3>
+    <h3>The <a href="https://en.wikipedia.org/wiki/Friedman_test">Friedman Test</a> was used to measure correlation in the preferences of the judges</h3>
+     <img src="file:images/friedman.png" alt="calc" align="middle" style="width:300px;height:60px;"/>
+     <h3>SSe= {{Friedman}}</h3>
+   <h3> <a href="https://en.wikipedia.org/wiki/Kendall%27s_W">Kendall's W</a>  is a normalization of the Friedman statistic between 0 and 1.</h3>
+    <h3> W = {{F_norm}}</h3>
+    <h3> The probability that random chance could be responsible for this correlation is {{f_pvalue}}</h3>
+    
+    <h6>Finally, when n or k is large (i.e. n > 15 or k > 4), the probability distribution of Q can be approximated by that of a chi-squared distribution. In this case the p-value is given by {\displaystyle \mathbf {P} (\chi _{k-1}^{2}\geq Q)} \mathbf{P}(\chi^2_{k-1} \ge Q). If n or k is small, the approximation to chi-square becomes poor and the p-value should be obtained from tables of Q specially prepared for the Friedman test. If the p-value is significant, appropriate post-hoc multiple comparisons tests would be performed.</h6>
+    
+  <p style="page-break-before: always" ></p>
+    <h3><b>{{title6}}</b></h3>
+    <h3><b>{{title7}}</b></h3>
+    <h6>Contrary to the Spearman correlation, the Kendall correlation is not affected by how far from each other ranks are but only by whether the ranks between observations are equal or not, and is thus only appropriate for discrete variables but not defined for continuous variables. </h6>
+<h6>Values close to 1 indicate strong agreement, values close to -1 indicate strong disagreement.</h6>
+     {{ rank_correlation}}    
+  <p style="page-break-before: always" ></p>
+    <h3><b>{{title8}}</b></h3>
+    <h5> Who has a similar Palate?  </h5>
+     {{ pairwise_ranks }}
+    
+    <p style="page-break-before: always" ></p>
+    <h3><b>{{title11}}</b></h3>
+     <img src="file:images/Corrplot_kde.png" alt="calc" align="middle" style="width:650px;height:700px;"/>
+    
+      <p style="page-break-before: always" ></p>
+    <h3><b>{{title8}}</b></h3>
+    <img src="file:images/Corrplot.png" alt="calc" align="middle" style="width:650px;height:700px;"/>
+    
+        <p style="page-break-before: always" ></p>
+    <h3><b>{{title10}}</b></h3>
+     <img src="file:images/Corrplot_heat.png" alt="calc" align="middle" style="width:600px;height:400px;"/>
+     
+     <p style="page-break-before: always" ></p>
+    <h3><b>{{title12}}</b></h3>
+    <h5> Great Minds Think Alike </h5>
+     <img src="file:images/Pairwise_ranking.png" alt="calc" align="middle" style="width:600px;height:400px;"/>
+    
+     <p style="page-break-before: always" ></p>
+    <h3><b>{{title13}}</b></h3>
+    <h5> Do we do better than random simulation? </h5>
+    {{ simulated_scores }}
+     <img src="file:images/Pairwise_ranking_bootstrap.png" alt="calc" align="middle" style="width:600px;height:400px;"/>
+</body>
+</html>
